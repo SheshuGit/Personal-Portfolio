@@ -1,0 +1,175 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f0f0f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    color: white;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-left p {
+    margin: 5px 0 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f0f0f5;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    margin-top: 0;
+    color: #ff6b6b;
+}
+
+.about-me {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #f06595, #ff6b6b);
+    transform: scale(1.05);
+}
+
+.contact {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.contact a {
+    color: #ff6b6b;
+    text-decoration: none;
+    word-wrap: break-word; /* Ensure long URLs wrap */
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    color: white;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    .contact p {
+        margin: 10px 0;
+    }
+
+    .contact a {
+        display: block; /* Ensure links are on separate lines */
+        margin-top: 5px;
+    }
+}
